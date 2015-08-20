@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Related Request/Scenario</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Related Requests/Scenarios</value>
+    </caseValues>
+    <fields>
+        <label><!-- Request --></label>
+        <name>Request__c</name>
+        <relationshipLabel><!-- Related Scenarios --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Test Scenario --></label>
+        <name>Test_Scenario__c</name>
+        <relationshipLabel><!-- Related Requests --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Related Request/Scenario Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
