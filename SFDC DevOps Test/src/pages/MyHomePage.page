@@ -1,6 +1,6 @@
 <apex:page sidebar="false">
 
-<apex:pageBlock title="DevOps Home Page test 3">
+<apex:pageBlock title="DevOps Home Page Arcytest">
 
   <apex:pageBlockSection columns="1">
       <div></div>
