@@ -18,7 +18,7 @@
                    serverurl="${sf.source.serverurl}" 
                    maxPoll="${sf.source.maxPoll}" 
                    retrieveTarget="src" 
-                   unpackaged="src/package.xml"/>
+                   unpackaged="salesforce.schema"/>
     </target>
 
 	<!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged  maxPoll="${sf.maxPoll}"-->
