@@ -41,7 +41,7 @@
     </target>
     
     <target name="Delete">
-      <sf:deploy username="${sf.target.username}" password="${sf.target.password}" serverurl="${sf.target.serverurl}" maxPoll="${sf.target.maxPoll}" deployRoot="Delete"/>
+      <sf:deploy username="${sf.target.username}" password="${sf.target.password}" serverurl="${sf.target.serverurl}" maxPoll="${sf.target.maxPoll}" deployRoot="src"/>
     </target>
 
 </project>
