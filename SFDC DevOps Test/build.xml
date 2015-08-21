@@ -5,20 +5,20 @@
 
     <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
         <classpath>
-            <pathelement location="../ant-salesforce.jar" />
+            <pathelement location="C:\Program Files (x86)\apache-ant-1.9.6\lib\ant-salesforce.jar" />
         </classpath>
     </taskdef>
     <!-- Retrieve an unpackaged set of metadata from your org -->
     <!-- The file unpackaged/package.xml lists what is to be retrieved -->
-    <target name="Download"> <!--retrieveUnpackaged-->
-      <mkdir dir="Download"/>
+    <target name="src"> <!--retrieveUnpackaged-->
+      <mkdir dir="src"/>
       <!-- Retrieve the contents into another directory -->
       <sf:retrieve username="${sf.source.username}" 
                    password="${sf.source.password}" 
                    serverurl="${sf.source.serverurl}" 
                    maxPoll="${sf.source.maxPoll}" 
-                   retrieveTarget="Download" 
-                   unpackaged="Download/package.xml"/>
+                   retrieveTarget="src" 
+                   unpackaged="src/package.xml"/>
     </target>
 
 	<!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged  maxPoll="${sf.maxPoll}"-->
@@ -27,7 +27,7 @@
                  password="${sf.target.password}" 
                  serverurl="${sf.target.serverurl}" 
                  checkOnly="true" maxPoll="${sf.target.maxPoll}" 
-                 deployRoot="Download" rollbackOnError="true"/>
+                 deployRoot="src" rollbackOnError="true"/>
     </target>
 	
     <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged  maxPoll="${sf.maxPoll}"-->
@@ -36,7 +36,7 @@
                  password="${sf.target.password}" 
                  serverurl="${sf.target.serverurl}" 
                  maxPoll="${sf.target.maxPoll}" 
-                 deployRoot="Download" 
+                 deployRoot="src" 
                  rollbackOnError="true"/>
     </target>
     
