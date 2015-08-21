@@ -1,6 +1,6 @@
 <apex:page sidebar="false">
 
-<apex:pageBlock title="DevOps Home Page sfdcDevOpsKirk">
+<apex:pageBlock title="DevOps Home Page sfdc-DevOps-Kirk">
 
   <apex:pageBlockSection columns="1">
       <div></div>
